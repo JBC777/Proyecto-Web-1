@@ -5,7 +5,6 @@ Paleta de colores
 #7d95da
 #ffffff
 #0b2f99
-#cccccc
 */
 /*----------------El objetivo de los comentarios es que todos entendamos los cambios
  que estamos haciendo en la entrega final quitamos todos los comentarios---------------*/
@@ -25,7 +24,7 @@ body {
     font-size: 14px;         /* Tamaño de fuente del body */
 }
 
-/***--------------Header----------- ***/
+/***-----------------------------Header---------------------------- ***/
 /* Estilo del encabezado */
 .header {
     position: sticky;        /* El header se mantiene fijo en la parte superior al hacer scroll */
@@ -34,17 +33,6 @@ body {
     width: 100%;             /* El header ocupa todo el ancho de la ventana */
     background-color: #ffffff; /* Color de fondo del header */
     box-shadow: 0px 0px 5px #0000ff; /* Sombra del header */
-}
-
-/*** logo ***/
-/* Estilo del logo en el encabezado */
-.logo img {
-    text-align: left;        /* Alinear el texto a la izquierda */
-    margin-top: 3px;         /* Margen superior */
-    margin-left: 10px;       /* Margen izquierdo */
-    display: flex;           /* Usar flexbox */
-    width: 100px;            /* Ancho de la imagen del logo */
-    height: auto;            /* Altura automática de la imagen del logo */
 }
 
 /* Contenedor del header */
@@ -72,6 +60,43 @@ body {
     list-style: none;        /* Eliminar viñetas de la lista del buscador */
 }
 
+.buscarOculto{
+    padding: 0; /* Sin relleno */
+    width: 0; /* Ancho de 0, ocultando el elemento */
+    border: none; /* Sin borde */
+    outline: none; /* Sin contorno al enfocar */
+    transition: all 0.5s linear; /* Transición suave de todas las propiedades durante 0.5 segundos */
+}
+
+.buscarVisible{
+    width: auto; /* Ancho automático, ajustándose al contenido */
+    border: none; /* Sin borde */
+    outline: none; /* Sin contorno al enfocar */
+    margin-right: 10px; /* Margen derecho de 10px */
+    border-radius: 8%; /* Bordes redondeados con un radio del 8% */
+    padding: 10px; /* Relleno interno de 10px */
+    transition: all 0.5s linear; /* Transición suave de todas las propiedades durante 0.5 segundos */
+}
+
+/*** logo ***/
+/* Estilo del logo en el encabezado */
+.logo img {
+    text-align: left;        /* Alinear el texto a la izquierda */
+    margin-top: 3px;         /* Margen superior */
+    margin-left: 10px;       /* Margen izquierdo */
+    display: flex;           /* Usar flexbox */
+    width: 100px;            /* Ancho de la imagen del logo */
+    height: auto;            /* Altura automática de la imagen del logo */
+}
+
+/* Estilo general de las imágenes */
+img {
+    width: 200px;            /* Ancho de 200px */
+    height: 200px;           /* Altura de 200px */
+    border-radius: 50%;      /* Bordes redondeados al 50% */
+    object-fit: cover;       /* Ajusta la imagen para que se vea completa */
+}
+
 /* Estilo de los elementos de la lista del menú */
 .item > li {
     display: inline-block;   /* Los elementos de la lista se muestran en línea */
@@ -93,13 +118,7 @@ body {
     text-shadow: #0000ff 0px 0px; /* Sombra del texto al pasar el cursor */
 }
 
-/* Estilo general de las imágenes */
-img {
-    width: 200px;            /* Ancho de 200px */
-    height: 200px;           /* Altura de 200px */
-    border-radius: 50%;      /* Bordes redondeados al 50% */
-    object-fit: cover;       /* Ajusta la imagen para que se vea completa */
-}
+
 
 /*--------------------- Estilo del contenido principal ------------------*/
 .contenido {
@@ -113,16 +132,22 @@ img {
 
 /* Estilo de los encabezados h1 dentro del contenido */
 .contenido h1 {
-    color: #0000ff;            /* Color del texto azul */
+    color: #0000ff;       /* Color del texto azul */
     width: 50%;             /* Ancho del 50% */
     padding: none;          /* Sin relleno */
     font-size: 50px;        /* Tamaño de fuente de 50px */
     font-weight: 600;       /* Peso de fuente 600 (negrita) */
+
 }
 
 /* Estilo de los encabezados h2 */
-.contenido h2 {
-    color: #0000ff;             /* Color del texto azul */
+.contenido .subTitle {
+    color: #0000ff;       /* Color del texto azul */
+    width: 60%;             /* Ancho del 50% */
+    padding: none;          /* Sin relleno */
+    font-size: 20px;        /* Tamaño de fuente de 50px */
+    font-weight: 600;       /* Peso de fuente 600 (negrita) */
+    
 }
 
 /* Estilo de los elementos <hr> */
@@ -134,7 +159,7 @@ img {
     box-shadow: 0px 0px 1px #0000ff; /* Sombra del contenido */
 }
 
-/* Estilo de los productos */
+/*---------------Estilo de los productos---------------*/
 .producto {
     border: 1px #0000ff;  /* Borde de 1px  y color azul */
     padding: 1em;            /* Relleno de 1em */
@@ -183,28 +208,19 @@ img {
     cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre el botón */
 }
 
-.buscarOculto{
-    padding: 0; /* Sin relleno */
-    width: 0; /* Ancho de 0, ocultando el elemento */
-    border: none; /* Sin borde */
-    outline: none; /* Sin contorno al enfocar */
-    transition: all 0.5s linear; /* Transición suave de todas las propiedades durante 0.5 segundos */
+.up:hover{
+    background-color: #b097f5ec; /* Color de fondo del botón */
+    border: 1px solid #4413caec; /* Borde del botón */
+    color: #ffff; /* Color del texto del botón */
+    font-size: 1em; /* Tamaño de fuente del texto del botón */
+    font-weight: 600; /* Grosor de la fuente del texto del botón */
+    cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre el botón */  
 }
 
-.buscarVisible{
-    width: auto; /* Ancho automático, ajustándose al contenido */
-    border: none; /* Sin borde */
-    outline: none; /* Sin contorno al enfocar */
-    margin-right: 10px; /* Margen derecho de 10px */
-    border-radius: 8%; /* Bordes redondeados con un radio del 8% */
-    padding: 10px; /* Relleno interno de 10px */
-    transition: all 0.5s linear; /* Transición suave de todas las propiedades durante 0.5 segundos */
-}
+
 
 /***----------------formulario---------------------***/
-.elemets_contac{
-    display: grid; /*display grid para el diseño */
-}
+
 .form{
     width: 70%; /* Ancho del formulario */
     height: auto; /* Altura automática del formulario */
@@ -229,13 +245,32 @@ img {
     text-align: left; /* Alinear el texto a la izquierda */
     padding: 1.5%; /* Relleno dentro de las etiquetas */
 }
-/*acomodar el iframe al lado del formulario*/
-iframe{
-    grid-row: 1; 
-    grid-column: 2;
-    width: 500px; /* Ancho del iframe */
-    height: 500px; /* Altura del iframe */
+/* Acomodar el iframe al lado del formulario */
+.elemets_contac {
+    border: 1px #0000ff;  /* Borde de 1px  y color azul */
+    padding: 1em;            /* Relleno de 1em */
+    width: 90%;              /* Ancho del producto */
+    display: inline-block;   /* Mostrar el producto en línea */
+    vertical-align: top;     /* Alinear verticalmente al tope */
+    margin: 0 2%;            /* Margen lateral de 2% */
+    
 }
+.elemets_contac > .form {
+    width: 40%; /* El formulario ocupa el 40% del ancho del contenedor */
+    display: inline-block; /* El formulario se muestra como un bloque en línea */
+    vertical-align: top; /* Alinea verticalmente la parte superior del formulario */
+    margin: 0 2%; /* Margen lateral de 2% a ambos lados del formulario */
+}
+
+.elemets_contac > iframe {
+    display: inline-block; /* El iframe se muestra como un bloque en línea */
+    width: 50%; /* El iframe ocupa el 50% del ancho del contenedor */
+    height: 515px; /* Altura fija del iframe */
+    border: 0; /* Sin borde alrededor del iframe */
+    vertical-align: top; /* Alinea verticalmente la parte superior del iframe */
+}
+
+
 .labelPolitica{
     width: 40%; /* Ancho de la etiqueta de política */
     display:inline-block ; /* Mostrar la etiqueta en línea y como bloque */
@@ -264,7 +299,8 @@ input[type="checkbox"]{
     background: #868686; /* Color de fondo de la etiqueta */
     background: linear-gradient(to top, #746666 3%, #868686  40%, #7a6c6c); /* Degradado de fondo de la etiqueta */
     cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre la etiqueta */
-    /**Posocion**/
+
+    /**Posicion**/
     position: absolute; /* Posición absoluta de la etiqueta */
     top: 5%; /* Posición superior de la etiqueta */
     left: 5px; /* Posición izquierda de la etiqueta */
@@ -321,6 +357,11 @@ footer {
     text-align: center; /* Alinear el texto al centro */
     padding: 0.1%; /* Espaciado interno superior e inferior */
 }
+
+
+
+
+
 
 
 
