@@ -62,7 +62,6 @@ body {
 
 .buscarOculto{
     padding: 0; /* Sin relleno */
-    width: 0; /* Ancho de 0, ocultando el elemento */
     border: none; /* Sin borde */
     outline: none; /* Sin contorno al enfocar */
     transition: all 0.5s linear; /* Transición suave de todas las propiedades durante 0.5 segundos */
@@ -150,6 +149,7 @@ img {
     
 }
 
+
 /* Estilo de los elementos <hr> */
 .contenido hr {
     border: none;            /* Elimina el estilo predeterminado del hr */
@@ -193,6 +193,7 @@ img {
     display: inline-block;   /* Muestra los elementos de la lista en línea */
     margin: 0 10px;          /* Agrega un margen lateral a cada elemento de la lista */
 }
+
 /**Estilo de los botones arriba **/
 .up{
     width: 10%; /* Ancho del botón */
@@ -348,6 +349,23 @@ input[type="checkbox"]{
     cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre los botones */
 }
 
+/***----------------lista de proveedores---------------------***/
+.table {
+    width: 50%;
+    border-collapse: collapse;
+    padding: 1em;            /* Relleno de 1em */
+    display: block;          /* Cambiar a bloque para usar margin auto */
+    margin: 0 auto;          /* Centralizar la tabla */
+    height: auto;            /* Fija la altura de cada elemento */
+    text-align: center;      /* Centrar texto horizontalmente */
+    box-shadow: 0px 0px 5px #0000ff; /* Sombra del contenido */
+}
+
+.table th, .table td {
+    border: 0.5px solid #0b2f9979;  /* Bordes internos de 1px y color azul */
+    padding: 0.1em;             /* Relleno de 0.5em para las celdas */
+    box-shadow: 0px 0px 1px #0000ff; /* Sombra del contenido */
+}
 /***----------------footer---------------------***/
 footer {
     background-color: #ffffff; /* Color de fondo blanco */
@@ -357,17 +375,6 @@ footer {
     text-align: center; /* Alinear el texto al centro */
     padding: 0.1%; /* Espaciado interno superior e inferior */
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 

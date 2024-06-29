@@ -40,7 +40,7 @@
       <!-- Buscador -->
       <div class="buscador">
         <li>
-          <form action="">
+          <form  id="searchForm">
             <input
               type="text"
               class="buscarOculto"
@@ -193,27 +193,13 @@
           <div><img src="img/kit 3 habitaciones (2).jpeg" alt="habitacion"></div>
         </div>
       </div>
-    </section>
-
-    <!-- Sección de Contacto -->
-    <section class="containers container_contacto" id="contacto"> 
-      <h2 hidden class="subTitle">Lista de precios Ofertas</h2><!--escondido para el uso futuro-->
-      <ul id="listPrice" class="list-group"></ul>
-      <!-- Template para lista de precios -->
-      <template id="template">
-        <div class="card_body">
-          <li class="list-group">
-            <p id="code"></p>
-            <a href="">${element}</a>
-            <p id="detail"></p>
-          </li>
-        </div>
-      </template>
       <button type="boton" class="up">Arriba</button>
       <hr>
     </section>
 
+    <!-- Sección de contacto -->
     <!-- Formulario de contacto -->
+    <section class="containers container_contacto" id="contacto"> 
     <section class="containers container_contac">
       <h2 class="subTitle">Contacto</h2>
       <div class="elemets_contac">
@@ -240,10 +226,32 @@
       </div>
       <br/>
       <button type="boton" class="up">Arriba</button>
+      <hr>
+    </section>
+
+    <!-- Sección de Listado de Usuarios -->
+    
+      <h2 class="subTitle">Lista de proveedores</h2>
+        <div class="row">
+          <div class = "col-8 offset-2">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Sitio web</th>
+                  <th>Nombre</th>
+                  <th>Email</th>
+                  <th>Teléfono</th>
+                </tr>
+              </thead>
+              <tbody id="respuesta">
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <br />
+      <button type="boton" class="up">Arriba</button>
     </section>
   </main>
-</div>
-
 
 <!-- Pie de página -->
 <footer>
@@ -258,6 +266,7 @@
   </p>
 </footer>
 <script src="https://kit.fontawesome.com/a8c062133a.js" crossorigin="anonymous"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
 
